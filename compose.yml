@@ -174,7 +174,7 @@ services:
       - huly_net
   #   # Required by HulyPulse (push notifications / real-time updates)
 
-  # hulypulse:
+  hulypulse:
     image: hardcoreeng/service_hulypulse:${HULY_PULSE_VERSION:-0.1.29}
     ports:
       - 8099:8099
