@@ -251,7 +251,6 @@ services:
       - ACCOUNTS_URL=http${SECURE:+s}://${HOST_ADDRESS}/_accounts
       - ACCOUNT_PORT=3000
       - QUEUE_CONFIG=redpanda:9092
-      - DISABLE_SIGNUP=true
     restart: unless-stopped
     networks:
       - huly_net
@@ -298,7 +297,6 @@ services:
       - GITHUB_URL=http${SECURE:+s}://${HOST_ADDRESS}/_github
       - GITHUB_APP=${GITHUB_APP_SLUG}
       - GITHUB_CLIENTID=${GITHUB_CLIENTID}
-      - DISABLE_SIGNUP=true
     restart: unless-stopped
     networks:
       - huly_net
